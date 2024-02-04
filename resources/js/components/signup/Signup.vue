@@ -1,6 +1,6 @@
 <template>
     <div>
-        <img src="../../../../public/assets/loginbgimg.png" alt="" class="h-screen w-screen absolute top-0 -z-10">
+        <img src="../../../../public/assets/signupbgimg.png" alt="" class="h-screen w-screen absolute top-0 -z-10">
         <div class=" w-full h-screen flex ">
             <div class="bg-[#161515] bg-opacity-60  md:rounded-[39px] h-full w-full md:w-3/4 lg:w-1/2 md:h-fit md:mx-auto md:my-auto py-14 md:py-20 px-8 md:px-20 lg:px-36">
                 <div class="w-full flex place-content-center mt-12 md:mt-0">
@@ -14,13 +14,9 @@
 
                 <div class="border border-white flex mt-8 rounded-[10px]">
                     <i class='bx bxs-lock bg-white rounded-l-[10px] text-[#1889FC] h-fit my-auto py-5 px-5 text-[20px] font-medium'></i>
-                    <input :type="showpass ? 'text' : 'password' " placeholder="Enter your password" class="w-full h-fit text-[16px] text-white placeholder:text-white px-6 py-4 bg-transparent border-none outline-none focus:outline-none focus:ring-0">
-                    <div v-if="showpass" @click="showpass = !showpass" class="cursor-pointer">
-                        <i class="fa fa-eye-slash text-gray-400 rounded-r-[10px] h-fit my-auto py-5 px-5 text-[20px] font-medium"></i>
-                    </div>
-
-                    <div v-else @click="showpass = !showpass" class="cursor-pointer">
-                        <i class="fa fa-eye text-gray-400 rounded-r-[10px] h-fit my-auto py-5 px-5 text-[20px] font-medium"></i>
+                    <input type="text" placeholder="Enter your password" class="w-full h-fit text-[16px] text-white placeholder:text-white px-6 py-4 bg-transparent border-none outline-none focus:outline-none focus:ring-0">
+                    <div class="cursor-pointer">
+                        <i class="fa fa-eye-slash text-gray-800 rounded-r-[10px] h-fit my-auto py-5 px-5 text-[20px] font-medium"></i>
                     </div>
 
                 </div>
@@ -34,22 +30,17 @@
                         <input type="checkbox" name="" id="" class="mr-2 my-auto bg-transparent border-white rounded-[3px]">
                         <span class="text-white text-sm my-auto">Remember me</span>
                     </div>
-                    <p class="text-white text-sm hover:underline cursor-pointer">Forget Password?</p>
+                    <p class="text-white text-sm">Forget Password?</p>
                 </div>
 
                 <div>
                     <button class="text-sm bg-transparent rounded-[10px] border-[1px] border-[#1889FC] text-white font-medium w-full py-4">Sign In</button>
                 </div>
 
-                <p class="text-white text-center text-sm tracking-wider mt-8">Create an account? <a href="/signup" class="text-[#FECC3B] hover:underline">Sign Up  now</a></p>
+                <p class="text-white text-center text-sm tracking-wider mt-8">I have an account?  <a href="/login" class="text-[#FECC3B] hover:underline">Sign In</a></p>
             </div>
-            
         </div>
     </div>
 </template>
 <script setup>
-import { ref } from 'vue';
-
-const showpass = ref(true)
-
 </script>

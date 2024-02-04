@@ -1,14 +1,16 @@
 import './bootstrap';
 
 import { createApp } from 'vue/dist/vue.esm-bundler.js';
-import Example from './components/Example.vue';
+import Landingpage from './components/landingpage/Landingpage.vue';
 import Login from './components/login/Login.vue';
+import Signup from './components/signup/Signup.vue';
 
 
 const app = createApp({
     components: {
-        Example,
+        Landingpage,
         Login,
+        Signup,
     }
 });
 
