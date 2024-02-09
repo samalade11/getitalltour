@@ -4,4 +4,6 @@
 <div id="app">
     <signup />
 </div>
+
+
 @endsection

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div @click="scrollToTop" v-if="showscrolltotop" class="transition ease-in-out delay-300 cursor-pointer fixed right-[30px] bottom-[60px] lg:right-[60px] lg:bottom-[70px]">
+        <div @click="scrollToTop" v-if="showscrolltotop" class="transition ease-in-out delay-300 z-40 cursor-pointer fixed right-[30px] bottom-[60px] lg:right-[60px] lg:bottom-[70px]">
             <!-- <a href="#" class="scroll-smooth"> -->
                 <img src="../.././../../public/assets/scrollupimg.png" alt="" class="bg-[#1889FC] py-2 px-2 rounded-full">
             <!-- </a> -->

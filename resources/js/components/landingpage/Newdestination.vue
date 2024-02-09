@@ -13,9 +13,177 @@
 
   </div>
 
-  
+  <div class="border border-[#1889FC] rounded-b-[14px] pb-4 pt-3 mb-4 mx-4 lg:mx-32">
+    <!-- <div class="bg-red-600 flex place-content-center w-full"> -->
+        <div class="flex pt-6 font-medium gap-12 md:gap-16 mx-6 overflow-auto place-content-center">
+            <p class=" w-fit px-3 pb-1 md:text-[16px] cursor-pointer" :class="activetab == 1 ? 'border-b-[2px] border-[#1889FC] text-[#1889FC]' : 'text-[#434642]' " @click="activetab = 1">Stays</p>
+            <p class=" w-fit px-3 pb-1 md:text-[16px] cursor-pointer" :class="activetab == 2 ? 'border-b-[2px] border-[#1889FC] text-[#1889FC]' : 'text-[#434642]' " @click="activetab = 2">Flights</p>
+            <p class=" w-fit px-3 pb-1 md:text-[16px] cursor-pointer" :class="activetab == 3 ? 'border-b-[2px] border-[#1889FC] text-[#1889FC]' : 'text-[#434642]' " @click="activetab = 3">Cars</p>
+            <p class=" w-fit px-3 pb-1 md:text-[16px] cursor-pointer" :class="activetab == 4 ? 'border-b-[2px] border-[#1889FC] text-[#1889FC]' : 'text-[#434642]' " @click="activetab = 4">Packages</p>
+            <p class=" w-fit px-3 pb-1 md:text-[16px] cursor-pointer" :class="activetab == 5 ? 'border-b-[2px] border-[#1889FC] text-[#1889FC]' : 'text-[#434642]' " @click="activetab = 5">Bucket List</p>
+            <p class=" w-fit px-3 pb-1 md:text-[16px] cursor-pointer" :class="activetab == 6 ? 'border-b-[2px] border-[#1889FC] text-[#1889FC]' : 'text-[#434642]' " @click="activetab = 6">Cruises</p>
+        </div>
+        <hr class="border-b border-[#1889FC]">
+    <!-- </div> -->
+
+    <div>
+        <div class="flex place-content-center md:place-content-end mx-24 my-3">
+            <select class="border-none text-[#1889FC] text-sm font-medium bg-transparent">
+                <option value="" >1 room, 1 traveler</option>
+                <option value="">1 room, 1 traveler</option>
+                <option value="">1 room, 1 traveler</option>
+            </select>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 mx-4 md:mx-16 my-4">
+            <div class="flex">
+                <i class='bx bxs-location-plus text-[18px] text-[#434642] my-auto mr-2'></i>
+                <p class="text-[#999A98] text-[16px] my-auto">Going to</p>
+            </div>
+
+            <div class="flex">
+                <i class="fa fa-calendar-check text-[18px] text-[#434642] my-auto mr-3"></i>
+                <div class="text-[#999A98] text-[15px] my-auto leading-5">
+                    <p >CHECK-IN</p>
+                    <p>Nov 25</p>
+                </div>
+            </div>
+
+            <div class="flex">
+                <i class="fa fa-calendar-check text-[18px] text-[#434642] my-auto mr-3"></i>
+                <div class="text-[#999A98] text-[15px] my-auto leading-5">
+                    <p>CHECK-OUT</p>
+                    <p>Oct 5</p>
+                </div>
+            </div>
+        </div>
+        <div class="flex mx-16">
+            <div class="text-[14px] font-medium text-[#434642] flex">
+                <input type="checkbox" class="my-auto bg-transparent h-4 rounded-[5px] mr-1"/>
+                <span class="my-auto">Add a flight</span>
+            </div>
+            <div class="text-[14px] font-medium text-[#434642] flex ml-3">
+                <input type="checkbox" class="my-auto bg-transparent h-4 rounded-[5px] mr-1"/>
+                <span class="my-auto">Add a car</span>
+            </div>
+        </div>
+
+        <div class="flex place-content-center py-4">
+            <button class="bg-[#1889FC] text-white text-sm py-3 px-8 rounded-[5px]">
+                Search
+            </button>
+            
+        </div>
+    </div>
+  </div>
+
+
+
+    <div class="hidden ml-6 lg:ml-24 my-12">
+        <div class="flex justify-between mr-6 my-4">
+            <h4 class="text-[#1B1B1B] text-[16px] md:text-[30px] font-medium w-fit h-fit">Destinations travelers love</h4>
+            <div class="flex gap-4 h-fit cursor-pointer">
+                <img src="../../../../public/assets/desleft.png" alt="">
+                <img src="../../../../public/assets/desright.png" alt="">
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2  md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <!-- 11111 -->
+            <div>
+                <div class=" relative">
+                    <img src="../../../../public/assets/desoneimg.png" alt="">
+                    <div class="absolute bottom-8 left-4">
+                        <div class="text-[#FECC3B] text-[23px] space-x-1">
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bx-star' ></i>
+                        </div>
+                        <p class="text-[#FECC3B] text-xs">(50 Reviews)</p>
+                    </div>
+                </div>
+                <div class="mx-2 mt-2">
+                    <p class="text-[#434642] font-medium text-[21px]">Paris, France</p>
+                    <p class="text-[#434642] text-xs lg:text-sm lg:mr-16">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+
+            <!-- 222 -->
+            <div>
+                <div class=" relative">
+                    <img src="../../../../public/assets/destwoimg.png" alt="">
+                    <div class="absolute bottom-8 left-4">
+                        <div class="text-[#FECC3B] text-[23px] space-x-1">
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bx-star' ></i>
+                        </div>
+                        <p class="text-[#FECC3B] text-xs">(50 Reviews)</p>
+                    </div>
+                </div>
+                <div class="mx-2 mt-2">
+                    <p class="text-[#434642] font-medium text-[21px]">Paris, France</p>
+                    <p class="text-[#434642]  text-xs lg:text-sm lg:mr-16">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+
+            <!-- 33 -->
+
+            <div>
+                <div class=" relative">
+                    <img src="../../../../public/assets/desthreeimg.png" alt="">
+                    <div class="absolute bottom-8 left-4">
+                        <div class="text-[#FECC3B] text-[23px] space-x-1">
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bx-star' ></i>
+                        </div>
+                        <p class="text-[#FECC3B] text-xs">(50 Reviews)</p>
+                    </div>
+                </div>
+                <div class="mx-2 mt-2">
+                    <p class="text-[#434642] font-medium text-[21px]">Paris, France</p>
+                    <p class="text-[#434642]  text-xs lg:text-sm lg:mr-16">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+
+
+            <!-- 44 -->
+
+            <div>
+                <div class=" relative">
+                    <img src="../../../../public/assets/desfourimg.png" alt="">
+                    <div class="absolute bottom-8 left-4">
+                        <div class="text-[#FECC3B] text-[23px] space-x-1">
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bx-star' ></i>
+                        </div>
+                        <p class="text-[#FECC3B] text-xs">(50 Reviews)</p>
+                    </div>
+                </div>
+                <div class="mx-2 mt-2">
+                    <p class="text-[#434642] font-medium text-[21px]">Paris, France</p>
+                    <p class="text-[#434642]  text-xs lg:text-sm lg:mr-16">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 </div>
 </template>
 <script setup>
+import { ref } from "vue";
 
+
+const activetab = ref(1)
 </script>
