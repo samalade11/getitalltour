@@ -51,7 +51,7 @@
         <hr class="border-b border-[#C9DBC9]">
         <div class=" flex justify-between my-4">
             <p class="text-[#434642] text-[12px] md:text-[16px]">&copy; 2024, Getitalltours, All rights reserved.</p>
-            <div class="flex gap-2 h-fit my-auto">
+            <div class="flex gap-2 h-fit my-auto cursor-pointer">
                 <img src="../../../../public/assets/fbicon.png" alt="">
                 <img src="../../../../public/assets/xicon.png" alt="">
                 <img src="../../../../public/assets/igicon.png" alt="">
