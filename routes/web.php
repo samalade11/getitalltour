@@ -27,3 +27,6 @@ Route::get('/signup', function () {
 Route::get('/aboutus', function () {
     return view('aboutus');
 })->name('aboutus');
+Route::get('/contactus', function () {
+    return view('contactus');
+})->name('contactus');

@@ -1,5 +1,5 @@
 <template>
-    <div class="mx-4 md:mx-8 lg:mx-32">
+    <div class="mx-4 md:mx-8 lg:mx-32 mt-12">
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             <div>

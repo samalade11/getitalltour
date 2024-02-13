@@ -1,9 +1,9 @@
 <template>
     <div>
         <Aboutnav />
-        <div class="pt-[400px] lg:pt-[500px]">
+        <!-- <div class="pt-[400px] lg:pt-[500px]"> -->
             <Abouttour />
-        </div>
+        <!-- </div> -->
         <Footer />
     </div>
 </template>

@@ -1,5 +1,5 @@
 <template>
-    <div class="relative ">
+    <div class="relative h-[400px] lg:h-[500px]">
         <div @click="scrollToTop" v-if="showscrolltotop" class="transition ease-in-out delay-300 z-40 cursor-pointer fixed right-[30px] bottom-[60px] lg:right-[60px] lg:bottom-[70px]">
             <!-- <a href="#" class="scroll-smooth"> -->
                 <img src="../.././../../public/assets/scrollupimg.png" alt="" class="bg-[#1889FC] py-2 px-2 rounded-full">
@@ -41,7 +41,7 @@
                     <a href="#" class="block py-1 px-3 my-1 lg:my-0 lg:p-0 text-[#181C17] text-[16px] font-medium rounded hover:bg-gray-200 lg:hover:bg-transparent lg:hover:text-[#1889FC] ">Become a Vendor</a>
                 </li>
                 <li>
-                    <a href="#" class="block py-1 px-3 my-1 lg:my-0 lg:p-0 text-[#181C17] text-[16px] font-medium rounded hover:bg-gray-200 lg:hover:bg-transparent lg:hover:text-[#1889FC] ">Contact Us</a>
+                    <a href="/contactus" class="block py-1 px-3 my-1 lg:my-0 lg:p-0 text-[#181C17] text-[16px] font-medium rounded hover:bg-gray-200 lg:hover:bg-transparent lg:hover:text-[#1889FC] ">Contact Us</a>
                 </li>
 
                 <li>
@@ -57,7 +57,9 @@
 
         <div class="absolute top-0 -z-10">
             <img src="../../../../public/assets/aboutimg1.png" alt="" class="w-screen h-[360px] lg:h-auto">
+            <p class="text-[#FFFFFF] text-[25px] md:text-[40px]  bottom-40 right-20 absolute font-medium">About Get It All Tours</p>
         </div>
+        
     </div>
 
 
