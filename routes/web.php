@@ -24,9 +24,19 @@ Route::get('/login', function () {
 Route::get('/signup', function () {
     return view('signup');
 })->name('signup');
+
 Route::get('/aboutus', function () {
     return view('aboutus');
 })->name('aboutus');
+
 Route::get('/contactus', function () {
     return view('contactus');
 })->name('contactus');
+
+Route::get('/tour', function () {
+    return view('tour');
+})->name('tour');
+
+Route::get('/vendor', function () {
+    return view('vendor');
+})->name('vendor');

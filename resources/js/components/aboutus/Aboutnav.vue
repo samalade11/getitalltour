@@ -35,10 +35,10 @@
                     <a href="/aboutus" class="block py-1 px-3 my-1 lg:my-0 lg:p-0 text-white bg-[#1889FC] text-[16px] font-medium rounded lg:bg-transparent lg:text-[#1889FC] " aria-current="page">About Us</a>
                 </li>
                 <li>
-                    <a href="#" class="block py-1 px-3 my-1 lg:my-0 lg:p-0 text-[#181C17] text-[16px] font-medium rounded hover:bg-gray-200 lg:hover:bg-transparent lg:hover:text-[#1889FC] ">Tour Packages</a>
+                    <a href="/tour" class="block py-1 px-3 my-1 lg:my-0 lg:p-0 text-[#181C17] text-[16px] font-medium rounded hover:bg-gray-200 lg:hover:bg-transparent lg:hover:text-[#1889FC] ">Tour Packages</a>
                 </li>
                 <li>
-                    <a href="#" class="block py-1 px-3 my-1 lg:my-0 lg:p-0 text-[#181C17] text-[16px] font-medium rounded hover:bg-gray-200 lg:hover:bg-transparent lg:hover:text-[#1889FC] ">Become a Vendor</a>
+                    <a href="/vendor" class="block py-1 px-3 my-1 lg:my-0 lg:p-0 text-[#181C17] text-[16px] font-medium rounded hover:bg-gray-200 lg:hover:bg-transparent lg:hover:text-[#1889FC] ">Become a Vendor</a>
                 </li>
                 <li>
                     <a href="/contactus" class="block py-1 px-3 my-1 lg:my-0 lg:p-0 text-[#181C17] text-[16px] font-medium rounded hover:bg-gray-200 lg:hover:bg-transparent lg:hover:text-[#1889FC] ">Contact Us</a>

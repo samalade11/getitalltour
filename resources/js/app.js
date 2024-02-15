@@ -5,7 +5,9 @@ import Landingpage from './components/landingpage/Landingpage.vue';
 import Login from './components/login/Login.vue';
 import Signup from './components/signup/Signup.vue';
 import Aboutus from './components/aboutus/Aboutus.vue';
-import Contactus from './components/contactus/Contactus.vue'
+import Contactus from './components/contactus/Contactus.vue';
+import Tour from './components/tour/Tour.vue';
+import Vendor from './components/vendor/Vendor.vue';
 
 
 const app = createApp({
@@ -15,6 +17,8 @@ const app = createApp({
         Signup,
         Aboutus,
         Contactus,
+        Tour,
+        Vendor,
     }
 });
 
