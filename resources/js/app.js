@@ -8,6 +8,7 @@ import Aboutus from './components/aboutus/Aboutus.vue';
 import Contactus from './components/contactus/Contactus.vue';
 import Tour from './components/tour/Tour.vue';
 import Vendor from './components/vendor/Vendor.vue';
+import Vendorselected from './components/vendorselect/Vendorselected.vue'
 
 
 const app = createApp({
@@ -19,6 +20,7 @@ const app = createApp({
         Contactus,
         Tour,
         Vendor,
+        Vendorselected,
     }
 });
 

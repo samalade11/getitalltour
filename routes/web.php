@@ -40,3 +40,7 @@ Route::get('/tour', function () {
 Route::get('/vendor', function () {
     return view('vendor');
 })->name('vendor');
+
+Route::get('/vendorselected', function () {
+    return view('vendorselected');
+})->name('vendorselected');
