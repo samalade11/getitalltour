@@ -7,7 +7,12 @@
             <button @click="showvendor = 4" class="text-[20px] md:text-[24px] rounded-[8px] py-2" :class="showvendor == 4 ? 'bg-[#1889FC] text-white' : 'border-[1px] border-[#CDCFD1] text-[#CDCFD1]' ">Tour Reviews</button>
         </div>
 
-
+        <div class="mt-8 mx-4 md:mx-8 lg:mx-32">
+            <Tourdetails v-if="showvendor == 1" />
+            <Tourplan v-if="showvendor == 2"/>
+            <Tourgallery v-if="showvendor == 3"/>
+            <Tourreview v-if="showvendor == 4"/>
+        </div>
 
 
 
@@ -20,6 +25,12 @@
     </div>
 </template>
 <script setup>
+import Tourdetails from "./Tourdetails.vue";
+import Tourplan from "./Tourplan.vue";
+import Tourgallery from "./Tourgallery.vue";
+import Tourreview from "./Tourreview.vue";
+
+
 import { ref } from "vue";
 
     const showvendor = ref(1)
